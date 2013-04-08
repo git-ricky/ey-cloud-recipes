@@ -34,6 +34,8 @@ if node[:instance_role] == "solo" || (node[:instance_role] == "util" && node[:na
       end
     end
     
+    Chef::Log.info "Starting Delayed Job from Chef recipe..." 
+
     execute "monit reload" do
        action :run
        epic_fail true
