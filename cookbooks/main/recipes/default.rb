@@ -1,5 +1,6 @@
 require_recipe "timezone"
 require_recipe "delayed_job"
+postgresql9_unaccent "ypooq"
 
 #execute "testing" do
 #  command %Q{
@@ -137,7 +138,6 @@ require_recipe "delayed_job"
   # postgresql9_sslinfo "dbname"
   # postgresql9_tablefunc "dbname"
   # postgresql9_test_parser "dbname"
-  # postgresql9_unaccent "dbname"
   # postgresql9_uuid_ossp "dbname"
 
 
